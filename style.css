@@ -11,6 +11,8 @@
     --primary-color: hsl(0, 6%, 6%);
     --headline: hsl(210, 11%, 15%);
     --paragraph: hsl(210, 9%, 31%);
+
+    --bg-gray: hsl(0, 0%, 95%);
   
     --light-color: hsl(0, 100%, 96%);
 
@@ -332,7 +334,6 @@
     content: '';
     width: 100%;
     height: calc(76% + var(--nav-height));
-    background: var(--brand-light);
     display: block;
   
     position: absolute;
@@ -361,6 +362,7 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
+
   }
   
 
@@ -389,14 +391,14 @@
     padding: 2.4rem;
     text-align: left;
   
-    background: hsl(0, 0%, 95%);
+    background: var(--bg-gray);
   
     
     border-radius: 0.6rem;
   }
 
   #services .card:hover {
-    box-shadow: .1rem .1rem .1rem .1rem rgb(77, 77, 77);
+    box-shadow: .1rem .1rem .1rem .1rem hsl(0, 0%, 30%);
   }
   
   #services .card h3 {
@@ -416,6 +418,21 @@
   #about .content p {
     margin-top: 2.4rem;
     margin-bottom: 6rem;
+  }
+
+  #about .col-b {
+    flex: flex;
+    margin: auto;
+
+    border-radius: 0.6rem;
+
+    background-color: var(--bg-gray);
+  }
+
+  #about .col-b p {
+    display: flex;
+    gap: 1rem;
+    
   }
   
   /* =============== Contact ==============*/
@@ -529,6 +546,7 @@
   /* =============== RESPONSIVO ==============*/
   
   @media (min-width: 1024px) {
+
     /* =============== geral ==============*/
   
     body {
@@ -552,12 +570,17 @@
     }
   
     section {
-      padding-block: 16rem;
+      padding-block: 10rem;
     }
   
     section header h2 {
       font-size: 4rem;
       line-height: 5.2rem;
+    }
+
+    .socialLinks svg:hover {
+      transform: scale(1.5);
+      transition: 200ms;
     }
   
     /* =============== RESET ==============*/
@@ -744,8 +767,8 @@
     /* =============== ABOUT ==============*/
   
     #about .wrapper {
-      grid-template-columns: 48rem 1fr;
-      grid-template-areas: 'B A';
+      grid-template-columns: 50rem 1fr;
+      grid-template-areas: 'A B';
       gap: 6.7rem;
     }
   
@@ -756,6 +779,8 @@
     #about .content p {
       margin-bottom: 0;
     }
+
+
   
     /* =============== CONTACT ==============*/
   
