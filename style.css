@@ -370,7 +370,7 @@
 .logos {
     display: flex;
     width: 10rem;
-    height: 10rem;
+    height: 12rem;
 
     gap: 10rem;
   }
@@ -427,12 +427,17 @@
     border-radius: 0.6rem;
 
     background-color: var(--bg-gray);
+    
   }
 
   #about .col-b p {
     display: flex;
     gap: 1rem;
     
+  }
+
+  #about .col-b p:hover {
+    filter: saturate(5);
   }
   
   /* =============== Contact ==============*/
