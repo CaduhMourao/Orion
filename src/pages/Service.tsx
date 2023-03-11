@@ -2,7 +2,7 @@ import { BatteryWarning, Cpu, DeviceMobile, Fingerprint, Terminal, Toilet, Warni
 
 export function Service() {
     return (
-        <div>
+        <div id="service">
             <div className="flex justify-center mt-10 text-center">
                 <div className="">
                     <h4 className="text-zinc-700">Serviços</h4>

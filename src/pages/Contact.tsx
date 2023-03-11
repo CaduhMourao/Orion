@@ -3,7 +3,7 @@ import { Maps } from '../components/Maps'
 
 export function Contact() {
     return (
-        <div className='grid grid-cols-2 max-w-3xl lg:max-w-6xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mt-10'>
+        <div id='contact' className='grid grid-cols-2 max-w-3xl lg:max-w-6xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mt-10'>
             <div className='flex flex-col gap-4 justify-center ml-10'>
                 <h1 className='text-3xl font-bold'>Entre em contato com a gente!</h1>
                 <span className='flex items-center gap-2'>
